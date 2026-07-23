@@ -1,0 +1,76 @@
+body {
+  font-family: Montserrat, sans-serif;
+  font-size: 13px;
+  
+}
+
+.product-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  font-family: Montserrat, sans-serif;
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 78px;
+  margin: 0;
+  text-align: center;
+  color: #515076;
+}
+.subtitle {
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0 px;
+  color: #A5A3B9;
+  text-transform: uppercase;
+}
+
+.product-title {
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  margin: 0;
+  color: #515076;
+}
+.description, .compound ,.compound-list {
+  font-family: Montserrat, sans-serif;
+  font-style: regular;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  margin: 0;
+  color: #515076;
+}
+.price {
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  font-style: bold;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+  color: #515076;
+}
+.price-rub {
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  font-style: regular;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+  color: #515076;
+  padding-right: 25px;
+  padding-bottom: 25px;
+}
+
+  .background {
+    background-color: #F7F7FA;
+    width: 295px;
+    height: 430px;
+    padding: 25px;
+    margin: 25px;
+  }
