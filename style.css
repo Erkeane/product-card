@@ -19,6 +19,7 @@ body {
   text-align: center;
   color: #515076;
 }
+
 .subtitle {
   font-family: Montserrat, sans-serif;
   font-size: 12px;
@@ -37,6 +38,7 @@ body {
   margin: 0;
   color: #515076;
 }
+
 .description, .compound ,.compound-list {
   font-family: Montserrat, sans-serif;
   font-style: regular;
@@ -46,6 +48,7 @@ body {
   margin: 0;
   color: #515076;
 }
+
 .price {
   font-family: Montserrat, sans-serif;
   font-size: 20px;
@@ -55,6 +58,7 @@ body {
   margin: 0;
   color: #515076;
 }
+
 .price-rub {
   font-family: Montserrat, sans-serif;
   font-size: 20px;
