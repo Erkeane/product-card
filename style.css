@@ -1,13 +1,27 @@
+*,
+  *::before,
+  *::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Montserrat, sans-serif;
   font-size: 13px;
-  
+  background-image: url("images/bg_flowers.png");
+  background-repeat: no-repeat;
+  background-position: 180px 0;
 }
 
 .product-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 45px;
+  column-gap: 45px;
+  justify-content: center;
+  width: 1110px;
 }
 
 .title {
@@ -18,6 +32,12 @@ body {
   margin: 0;
   text-align: center;
   color: #515076;
+  margin-bottom: 110px;
+  margin-top: 220px;
+}
+
+.product-image {
+  margin-bottom: 30px;
 }
 
 .subtitle {
@@ -25,9 +45,9 @@ body {
   font-size: 12px;
   font-weight: 400;
   line-height: 24px;
-  margin: 0 px;
   color: #A5A3B9;
   text-transform: uppercase;
+  display: inline-block;
 }
 
 .product-title {
@@ -35,46 +55,60 @@ body {
   font-size: 20px;
   font-weight: 700;
   line-height: 27px;
-  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
   color: #515076;
 }
 
 .description, .compound ,.compound-list {
   font-family: Montserrat, sans-serif;
-  font-style: regular;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
+  padding-left: 0;
   margin: 0;
+  list-style-position: inside;
   color: #515076;
+}
+
+.compound{
+  margin-bottom: 5px;
+}
+
+.compound-list li{
+  margin-bottom: 5px;
+}
+
+.description {
+  margin-bottom: 15px;
 }
 
 .price {
   font-family: Montserrat, sans-serif;
   font-size: 20px;
-  font-style: bold;
   font-weight: 700;
   line-height: 24px;
-  margin: 0;
   color: #515076;
 }
 
 .card_price {
   font-family: Montserrat, sans-serif;
   font-size: 20px;
-  font-style: regular;
   font-weight: 400;
   line-height: 24px;
-  margin: 0;
   color: #515076;
-  padding-right: 25px;
-  padding-bottom: 25px;
 }
 
   .background {
     background-color: #F7F7FA;
-    width: 295px;
-    height: 430px;
+    width: 340px;
+    height: 573px;
     padding: 25px;
-    margin: 25px;
-  }
+}
+
+.price-card_price {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
