@@ -1,0 +1,29 @@
+.card {
+  background-color: #F7F7FA;
+  padding: 25px;
+  width: 100%;
+}
+
+.card__image {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.card__category { /* для нормальной кожи */
+  display: block;
+  font-family: Montserrat, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #A5A3B9;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.card__name { /* название товара */
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  line-height: 27px;
+  color: #515076;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}

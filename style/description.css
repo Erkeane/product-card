@@ -1,0 +1,8 @@
+.card__description { /* описание товара */
+  font-family: Montserrat, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #515076;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}

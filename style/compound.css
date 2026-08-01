@@ -1,0 +1,23 @@
+.card__compound { /* состав */
+  display: block;
+  font-family: Montserrat, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #515076;
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+.compound__list { /* список состава */
+  padding-left: 0;
+  margin-top: 5px;
+  list-style-position: inside;
+} 
+
+.compound__item { /* элемент списка состава */
+  margin-bottom: 5px;
+}
+
+.compound__item:last-child { /* последний элемент списка состава */
+  margin-bottom: 0;
+}
