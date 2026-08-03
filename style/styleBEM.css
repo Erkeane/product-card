@@ -9,3 +9,120 @@ body {
   font-size: 13px;
   line-height: 18px;
 }
+
+.title {
+  font-family: Montserrat, sans-serif;
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 78px;
+  text-align: center;
+  color: #515076;
+}
+
+.clear-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.catalog__title {
+  margin-top: 220px;
+  margin-bottom: 110px;
+}
+
+.catalog__container {
+  background-image: url("../images/bg_flowers.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding-top: 1px;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #F7F7FA;
+  padding: 25px;
+  width: 100%;
+}
+
+.card__image {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.card__category { /* для нормальной кожи */
+  display: block;
+  font-family: Montserrat, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #A5A3B9;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.card__name { /* название товара */
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  line-height: 27px;
+  color: #515076;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.card__description { /* описание товара */
+  font-family: Montserrat, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #515076;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+.card__compound { /* состав */
+  display: block;
+  font-family: Montserrat, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #515076;
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+.compound__list { /* список состава */
+  padding-left: 0;
+  margin-top: 5px;
+  list-style-position: inside;
+} 
+
+.compound__item { /* элемент списка состава */
+  margin-bottom: 5px;
+}
+
+.compound__item:last-child { /* последний элемент списка состава */
+  margin-bottom: 0;
+}
+
+.card__price { /* цена */
+  display: flex;
+  justify-content: space-between;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #515076;
+  width: 290px;
+}
+
+.products { 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 45px;
+}
+
+.products__item {
+  width: 340px;
+  height: 573px;
+}
