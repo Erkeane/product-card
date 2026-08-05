@@ -31,7 +31,7 @@ body {
 }
 
 .catalog__container {
-  background-image: url("../images/bg_flowers.png");
+  background-image: url("images/bg_flowers.png");
   background-repeat: no-repeat;
   background-position: 0 0;
   padding-top: 1px;
