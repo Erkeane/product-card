@@ -122,7 +122,32 @@ body {
   gap: 45px;
 }
 
-.products__item {
+.products__card {
   width: 340px;
   height: 573px;
 }
+
+.button {
+  display: inline-block;
+  padding: 10px 23px;
+  font-size: 16px;
+  font-family: Montserrat, sans-serif;
+  cursor: pointer;
+  text-align: center;
+  color: #060606;
+  background-color: #A5A3B9;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.click-me {
+  background-color: #A5A3B9; /* Первый цвет*/
+  color: #060606;
+}
+
+.click-me--active {
+  background-color: #d8f198; /* Второй цвет*/
+  color: #060606;
+}
+
