@@ -26,11 +26,9 @@ carInfo.owner = userInfo;
 //3.Функция - максимальная скорость
 
 function checkMaxSpeed(car) {
-  if ("maxSpeed" in car) {
-  
-  }else {
-    car.maxSpeed = 220;
-  }
+  if (!("maxSpeed" in car)) {
+car.maxSpeed = 220
+}
 }
 
 checkMaxSpeed(carInfo);
@@ -40,7 +38,7 @@ console.log(carInfo);
 //4.Функция с двумя аргументами
 
 function showInfo (myObject, person){
-console.log (myObject[person]);
+  console.log (myObject[person]);
 }
 //showInfo(userInfo, "name");
 
