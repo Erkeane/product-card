@@ -2,18 +2,26 @@
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const newNumbers = numbers.filter(numbers => numbers > 4);
-  console.log(newNumbers);
+console.log(newNumbers);
 
 //Задание 3
 
-const footballClubs = ["PSG", "Manchester United", "Liverpool", "Barcelona", "Manchester City"]
-const newClub = footballClubs.find(club => club === "Manchester United");
-  console.log(newClub)
+const footballClubs = ["PSG", "Manchester United", "Liverpool", "Barcelona", "Manchester City"];
+
+function searchClub(club) {
+if (typeof club === "string") {
+  return footballClubs.includes(club);
+} else {
+  return "Название клуба должно быть строкой";
+}
+}
+
+console.log(searchClub(123));
 
 //Задание 4
 
 function reverseArray(array) {
-  console.log(array.reverse())
+console.log(array.reverse())
 }
 reverseArray (newNumbers)
 reverseArray (footballClubs)
@@ -35,8 +43,7 @@ const usersId = comments.map(comment => {
     comment.postId = 1;
   }
   return comment;
-});
-  
+}); 
 console.log(usersId);
 
 //Задание 9
@@ -50,7 +57,7 @@ console.log(usersIdandName);
 //Задание 10
 
 const usersBodyText = comments.map (comment => ({
-  ...comment, isInvalid:comment.body.length > 180 ? true : false
+...comment, isInvalid:comment.body.length > 180 ? true : false
 }))
 
 console.log (usersBodyText)
@@ -66,7 +73,7 @@ const usersEmailsArray = comments.reduce ((emails, comment) =>{
 console.log(usersEmailsArray)
 
 const usersEmailsArrayNew = comments.map (comment => {
-  return comment.email;
+return comment.email;
 })
 console.log(usersEmailsArrayNew)
 
