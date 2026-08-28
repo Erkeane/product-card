@@ -7,7 +7,6 @@ console.log(newNumbers);
 //Задание 3
 
 const footballClubs = ["PSG", "Manchester United", "Liverpool", "Barcelona", "Manchester City"];
-
 function searchClub(club) {
 if (typeof club === "string") {
   return footballClubs.includes(club);
