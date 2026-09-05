@@ -20,10 +20,16 @@ const renderCards = (array) => {
     productDuplicate.querySelector('.card__category').textContent = product.category
     productDuplicate.querySelector('.card__name').textContent = product.productName
     productDuplicate.querySelector('.card__description').textContent = product.description
-    productDuplicate.querySelector('.li-1').textContent = product.li_1
-    productDuplicate.querySelector('.li-2').textContent = product.li_2
-    productDuplicate.querySelector('.li-3').textContent = product.li_3
     productDuplicate.querySelector('.card__price-value').textContent = product.price
+
+    const compoundList = productDuplicate.querySelector('.compound__list');
+    product.compound.forEach(item => {
+      const li = document.createElement('li');
+      li.textContent = item;
+      li.classList.add('compound__item');
+      compoundList.appendChild(li);
+    });
+    
     productcardsList.appendChild(productDuplicate)
     console.log(productcardsList)
   });
