@@ -34,11 +34,66 @@
           </template>
 
         </div>
-          
+
       </main>
+      <footer class="footer">
+        <div class="footer__top">
+        <div class="footer__column footer__leftside">
+          <h2 class="footer__productcards">Product Cards</h2>
+          <p class="footer__description">У Нас Самые Лучшие Продукты Для Кожи!</p>
+          <ul class="socialmedia__icons">
+          <li><a href="#"><img src="images/telegram_logo.png" alt="" class="icon_telegram"></a></li>
+          <li><a href="#"><img src="images/VK_logo.png" alt="" class="icon_vk"></a></li>
+          </ul>
+        </div>
+        <div class="footer__column footer__center">
+          <p class="subscribe-us">Подпишись на наши акции:</p>
+          <form class="footer__form">
+          <input name="email" type="email" required placeholder="Введи Email..." class="email__input">
+          <button type="submit" class="footer__submit">Подписаться</button>
+          </form>
+        </div>
+        <nav class="footer__rightside">
+          <p class="nav__title">Быстрые ссылки</p>
+          <ul class="nav__list">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        </div>
+        <div class = "registrationButton">
+          <button type="button" class="registration">Регистрация</button>
+        </div>
+        <div class="overlay"></div>
+        <div class="modal">
+          <button class="modal__close">x</button>
+          <h2 class="modal__title">Регистрация</h2>
+          <form class="modal__form">
+            <p>Имя</p>
+            <input type="text" name="firstName" placeholder="Введите имя" required>
+            <p>Фамилия</p>
+            <input type="text" name="lastName" placeholder="Введите фамилию" required>
+            <p>Дата рождения</p>
+            <input type="date" name="birthDate" required>
+            <p>Логин</p>
+            <input type="text" name="login" placeholder="Придумайте логин" required>
+            <p>Пароль</p>
+            <input type="password" name="password" placeholder="Придумайте пароль" required minlength="4">
+            <p>Повторите пароль</p>
+            <input type="password" name="repeatPassword" placeholder="Повторите пароль" required minlength="4">
+            <button type="submit">Зарегистрироваться</button>
+          </form>
+        </div>
+        <div class="footer__bottom">
+          <hr class="horizontal__line">
+          <p class="copyright">www.product-cards.com©all right reserve</p>
+        </div>
+      </footer>
       <script src="main.js"></script>
       <script src="homework-7.js"></script>
       <script src="homework-8.js"></script>
+      <script type="module" src="homework-11.js"></script>
       <script type ="module" src="homework-10.js"></script>
       <script type ="module" src="homework-9.js"></script>
       <script type ="module" src="comments.js"></script>
