@@ -9,7 +9,7 @@ footerForm.addEventListener('submit', (event) => {
 })
 
 // Уровень 2
-const registrationButton = document.querySelector('.registration');
+const registrationButton = document.querySelector('.registrationButton');
 const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
 const closeButton = document.querySelector('.modal__close');
