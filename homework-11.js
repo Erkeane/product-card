@@ -34,7 +34,7 @@ registrationForm.addEventListener('submit', (event) => {
   const repeatPassword = registrationForm.repeatPassword.value;
 
   if (!registrationForm.checkValidity() || password !== repeatPassword) {
-    alert('Регистрация отклонена. Пароли не совпдают. Проверьте правильность заполнения формы.');
+    alert('Регистрация отклонена. Пароли не совпадают. Проверьте правильность заполнения формы.');
     return;
   }
 
