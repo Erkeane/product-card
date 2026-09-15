@@ -1,51 +1,38 @@
+import { Modal } from "./modal.js";
+import { Form } from "./form.js";
+
 // Уровень 1
-const footerForm = document.querySelector('.footer__form')
-footerForm.addEventListener('submit', (event) => {
+const footerForm = new Form('.footer__form');
+footerForm.form.addEventListener('submit', (event) => {
   event.preventDefault()
-  const form = event.target;
-  const formData = new FormData(form);
-  const data = Object.fromEntries(formData.entries())
+  const data = footerForm.getForms();
   console.log(data)
 })
 
 // Уровень 2
 const registrationButton = document.querySelector('.registrationButton');
-const modal = document.querySelector('.modal');
-const overlay = document.querySelector('.overlay');
-const closeButton = document.querySelector('.modal__close');
-const registrationForm = document.querySelector('.modal__form');
-
+const registrationForm = new Form ('.modal__form');
+const registrationModal = new Modal('.modal');
 let user;
 
 registrationButton.addEventListener('click', () => {
-  modal.classList.add('modal-showed');
-  overlay.classList.add('modal-showed');
+  registrationModal.open();
 });
 
-closeButton.addEventListener('click', () => {
-  modal.classList.remove('modal-showed');
-  overlay.classList.remove('modal-showed');
-});
-
-registrationForm.addEventListener('submit', (event) => {
+registrationForm.form.addEventListener('submit', (event) => {
   event.preventDefault();
 
-  const password = registrationForm.password.value;
-  const repeatPassword = registrationForm.repeatPassword.value;
+const values = registrationForm.getForms();
 
-  if (!registrationForm.checkValidity() || password !== repeatPassword) {
+  if (!registrationForm.checkValid() || values.password !== repeatPassword) {
     alert('Регистрация отклонена. Пароли не совпадают. Проверьте правильность заполнения формы.');
     return;
   }
 
-  const formData = new FormData(registrationForm);
-  const data = Object.fromEntries(formData.entries());
-  data.createdOn = new Date();
-
-  user = data;
+  values.createdOn = new Date();
+  user = values;
   console.log(user);
 
-  modal.classList.remove('modal-showed');
-  overlay.classList.remove('modal-showed');
-  registrationForm.reset();
+  registrationModal.close();
+  registrationForm.resetFormValue();
 });
