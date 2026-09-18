@@ -7,7 +7,7 @@ class Warrior {
     this.weapon = weapon;
   }
 
-  showInfo() {
+showInfo() {
   console.log(`${this.name}, ${this.weapon}, ${this.role}`)
 }
 }

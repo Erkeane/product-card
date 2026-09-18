@@ -4,7 +4,7 @@ export class Modal {
     this.overlay = document.querySelector(`.overlay`);
     this.closeButton = document.querySelector(`.modal__close`);
 
-    this.CloseModalButton();
+this.closeModalButton();
   }
 
   open() {
@@ -21,7 +21,7 @@ export class Modal {
     return this.modal.classList.contains('modal-showed');
   }
 
-  CloseModalButton() {
+  closeModalButton() {
     this.closeButton.addEventListener('click', () => {
       this.close();
     });

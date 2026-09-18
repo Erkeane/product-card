@@ -1,7 +1,8 @@
 export class Form {
+
 constructor(formId) {
   this.form = document.querySelector(formId);
-  }
+}
 
 getForms() {
   const formData = new FormData(this.form);
@@ -14,5 +15,5 @@ checkValid() {
   
 resetFormValue() {
   this.form.reset();
-  }
+}
 }
