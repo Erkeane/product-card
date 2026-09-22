@@ -6,6 +6,7 @@ import "./homework-11.js";
 import "./homework-12.js";
 import "./modal.js";
 import "./form.js";
+import "./homework-13.js";
 
 //Изменение цвета одной карточки
 const productCard = document.querySelector('.products__card'); 
