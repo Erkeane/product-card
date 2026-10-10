@@ -1,0 +1,20 @@
+[
+{ "id":100 , 
+  "name": "Анна", 
+  "surname": "Нихт" , 
+  "email": "annaniht@gmail.com" , 
+  "age": 25 
+},
+{ "id":150 , 
+  "name": "Виктор", 
+  "surname": "Пытько" , 
+  "email": "vityapyh@gmail.com" , 
+  "age": 19 
+},
+{ "id":200 , 
+  "name": "Олеся", 
+  "surname": "Бруталити" , 
+  "email": "brutall@gmail.com" , 
+  "age": 30 
+}
+]
